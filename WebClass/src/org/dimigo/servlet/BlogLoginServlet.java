@@ -51,17 +51,17 @@ public class BlogLoginServlet extends HttpServlet {
 		
 		if(id.equals("test@naver.com")){
 			
-			// 세션에 사용자 정보를 생성하여 담기
+			
 			HttpSession session = request.getSession();
 			
 			UserVO user = new UserVO();
 			user.setId(id);
-			user.setName("전병현");
+			user.setName("mung");
 			
 			session.setAttribute("user", user);
 			
 			
-			RequestDispatcher rd = request.getRequestDispatcher("jsp/myblog.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("jsp/myindex.jsp");
 			rd.forward(request, response);
 			
 		}
@@ -70,7 +70,7 @@ public class BlogLoginServlet extends HttpServlet {
 			
 			request.setAttribute("msg", "error");
 			
-			RequestDispatcher rd = request.getRequestDispatcher("jsp/myblog.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("jsp/myindex.jsp");
 			rd.forward(request, response);
 			
 		}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Casual - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <br>
+    <form class="form-inline my-2 my-lg-0" id="joinForm">
+      <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">회원가입</button>
+    </form>
+
+    <form class="form-inline my-2 my-lg-0" id="loginForm">
+            <input class="form-control mr-sm-2" type="text" placeholder="ID"
+               aria-label="ID" id="id" required> <input
+               class="form-control mr-sm-2" type="password" placeholder="PWD"
+               aria-label="PWD" id="pwd" required>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그인</button>
+         </form>
+       <br>
+
+
+<div class="modal" id="myModal">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">로그인 결과</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+<div class="modal" id="mySign">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">회원가입</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal" id="myFinal">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">회원가입 완료</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+<form id = "finalForm">
+      <div class="modal-body">
+        <h6>[학년을 선택하세요]</h6>
+        <input type ="radio" name = "grade" value="1" checked required>1학년
+        <input type ="radio" name = "grade" value="2" checked required>2학년
+        <input type ="radio" name = "grade" value="3" checked required>3학년
+        <br />
+        <br />
+          <h6>[해당하는 반을 선택하세요]</h6>
+    <select name="list" required>
+        <option value="">-선택-</option>
+        <option value="eb">1반</option>
+        <option value="dc">2반</option>
+        <option value="wp">3반</option>
+        <option value="wp">4반</option>
+        <option value="hd">5반</option>
+        <option value="hd">6반</option>
+    </select>
+    <br>
+    <br />
+    <h6>[번호를 입력하세요]</h6>
+    <input type="text" required /> -- 숫자만 입력하세요
+    <br />
+    <br />
+
+
+
+
+        <h6>[사용하실 아이디를 입력하세요]</h6>
+        <input type="text" id="signupId" placeholder="ID" required> -- 아이디 입력
+        <br />
+        <br />
+        <h6>[사용하실 비밀번호를 입력하세요]</h6>
+        <input type="password" id="signupPwd" placeholder="Password" required> -- 비밀번호 입력
+        <br />
+        <br />
+        <h6>[이름을 입력하세요]</h6>
+        <input type="text" required /> -- 이름 입력
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary my-2 my-sm-0" data-dimsmiss="modal" type="submit">Sign Up</button>
+      </div>
+      </form>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Welcome!</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">korea digital media highschool | 2학년 6반 | 권현석</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/dise.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">가고 싶은 곳</h2>
+            <h4 class="text-shadow text-white">September 4, 2017</h4>
+            <br />
+            <br />
+            <p class="text-shadow text-white">정식명칭은 월트디즈니월드이다. 세계 최대규모의 종합 휴양지로, 올랜도에서 남서쪽으로 약 32km 떨어져 있다. 개발되지 않은 호수·늪지대의 환경을 잘 살려 조성하였으며 1971년 개장하였다. 월트디즈니프로덕션이 경영하고 있다. 건설 당시 면적은 캘리포니아주 애너하임에 있는 디즈니랜드보다 훨씬 넓은 121㎢였다.
+
+마법의 왕국은 디즈니랜드에 있는 것과 유사한 내용과 시설로 이루어졌는데, 신데렐라성(城)·메인스트리트·모험의 나라·개척의 나라·자유광장·환상의 나라·미래의 나라 등의 테마랜드가 있다.
+
+</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/chicken.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">좋아하는 음식</h2>
+            <h4 class="text-shadow text-white w-50">September 5, 2017</h4>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 class="text-shadow text-white">그냥 겁나 맛있다</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/slide-3.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">앞으로 해야할 일</h2>
+            <h4 class="text-shadow text-white">September 6, 2017</h4>
+            <br />
+            <br />
+            <p class="text-shadow text-white w-50">뒹굴기</p>
+            <p class="text-shadow text-white w-50">휴대폰하기</p>
+            <p class="text-shadow text-white w-50">공부하기</p>
+            <p class="text-shadow text-white w-50">잠자기</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="bg-faded p-4 my-4">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer class="bg-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">Copyright &copy; KHS</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/login.js"></script>
+    <script src="vendor/bootstrap/js/signup.js"></script>
+    <script src="vendor/bootstrap/js/final.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
