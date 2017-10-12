@@ -8,7 +8,7 @@
 <title>Business Casual - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WebClass/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -21,11 +21,6 @@
 
   <body>
     <br>
-    
-
-    <form class="form-inline my-2 my-lg-0" id="joinForm">
-      <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">회원가입</button>
-    </form>
 	
 	     <%-- 세션이 없는 경우 --%>
     <%
@@ -57,12 +52,11 @@
           <%= user.getName() %> 님
          </a>
          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
-         <form action="/WebClass/logout" method="post">
+         <form action="/WebClass/bloglogout" method="post">
             <button type="submit" class="dropdown-item">Sign out</button>
+            
           </form>
-             <div class="dropdown-divider"></div>
-           <button type="button" class="dropdown-item">Action1</button>
-           <button type="button" class="dropdown-item">Action2</button>
+           
 
          </div>
        </li>
@@ -283,13 +277,13 @@
 
     <!-- Bootstrap core JavaScript -->
 
-    <script src="vendor/bootstrap/js/login.js"></script>
-    <script src="vendor/bootstrap/js/signup.js"></script>
-    <script src="vendor/bootstrap/js/final.js"></script>
+    <script src="/WebClass/vendor/bootstrap/js/login.js"></script>
+    <script src="/WebClass/vendor/bootstrap/js/signup.js"></script>
+    <script src="/WebClass/vendor/bootstrap/js/final.js"></script>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/WebClass/vendor/jquery/jquery.min.js"></script>
+    <script src="/WebClass/vendor/popper/popper.min.js"></script>
+    <script src="/WebClass/vendor/bootstrap/js/bootstrap.min.js"></script>
     
     <script type="text/javascript">
     <%
